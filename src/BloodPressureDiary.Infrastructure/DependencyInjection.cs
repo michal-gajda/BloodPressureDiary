@@ -16,5 +16,6 @@ public static class DependencyInjection
         services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
         services.AddSingleton<IDateTimeService, DateTimeService>();
+        services.AddSingleton<IMeasurementRepository, MeasurementRepository>();
     }
 }
